@@ -2,12 +2,54 @@ import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
-  { title: "E-Commerce Platform", description: "A full-featured online store with cart functionality, payment processing, and inventory management. Built with modern technologies for optimal performance.", tags: ["React", "Node.js", "PostgreSQL", "Stripe"], liveUrl: "https://example.com", githubUrl: "https://github.com", featured: true },
-  { title: "Task Management App", description: "Collaborative project management tool with real-time updates, team workspaces, and automated workflows.", tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"], liveUrl: "https://example.com", githubUrl: "https://github.com", featured: true },
-  { title: "AI Content Generator", description: "SaaS application leveraging AI to generate marketing copy, blog posts, and social media content.", tags: ["Python", "OpenAI", "FastAPI", "React"], liveUrl: "https://example.com", githubUrl: "https://github.com", featured: true },
-  { title: "Portfolio Dashboard", description: "Investment tracking dashboard with real-time market data and performance analytics.", tags: ["Vue.js", "D3.js", "Firebase"], liveUrl: "https://example.com", githubUrl: "https://github.com", featured: false },
-  { title: "Social Media Analytics", description: "Analytics platform for tracking social media engagement and growth metrics.", tags: ["React", "GraphQL", "MongoDB"], liveUrl: "https://example.com", githubUrl: "https://github.com", featured: false },
-  { title: "Weather App", description: "Beautiful weather application with location-based forecasts and interactive maps.", tags: ["React Native", "OpenWeather API"], liveUrl: "https://example.com", githubUrl: "https://github.com", featured: false },
+  {
+    title: "Pf Genomic Surveillance Pipeline",
+    description: "A reproducible Nextflow/Snakemake pipeline for whole-genome sequencing analysis of Plasmodium falciparum. Covers quality control, variant calling, and population-level summary statistics to support malaria genomic surveillance across sub-Saharan Africa.",
+    tags: ["Nextflow", "Snakemake", "Python", "Bash", "WGS"],
+    liveUrl: "https://github.com/mfdiop",
+    githubUrl: "https://github.com/mfdiop",
+    featured: true,
+  },
+  {
+    title: "AMR Resistance Prediction Tool",
+    description: "Machine learning models trained on P. falciparum genomic data to predict antimalarial drug resistance markers. Integrates molecular surveillance outputs with scikit-learn classifiers and interactive R Shiny dashboards for field-ready reporting.",
+    tags: ["Python", "Scikit-learn", "R", "Shiny", "TensorFlow"],
+    liveUrl: "https://github.com/mfdiop",
+    githubUrl: "https://github.com/mfdiop",
+    featured: true,
+  },
+  {
+    title: "Malaria Transmission Dynamics Explorer",
+    description: "Interactive R Shiny dashboard for visualising spatiotemporal patterns in malaria parasite populations. Combines allele frequency data, genetic differentiation metrics (FST), and geographic mapping to support public health decision-making.",
+    tags: ["R", "Shiny", "Tidyverse", "ggplot2", "Leaflet"],
+    liveUrl: "https://github.com/mfdiop",
+    githubUrl: "https://github.com/mfdiop",
+    featured: true,
+  },
+  {
+    title: "Vaccine Candidate Diversity Analyser",
+    description: "Computational tool for assessing balancing selection and genetic diversity in P. falciparum vaccine candidate genes across African populations using population genetics statistics (Tajima's D, dN/dS).",
+    tags: ["R", "Python", "PopGen", "Bioconductor"],
+    liveUrl: "https://github.com/mfdiop",
+    githubUrl: "https://github.com/mfdiop",
+    featured: false,
+  },
+  {
+    title: "Anopheles Genetic Diversity Study",
+    description: "Population genomics analysis of Anopheles gambiae s.l. across sub-Saharan Africa, investigating reduced genetic diversity in fertility and vector competency genes relevant to vector control strategies.",
+    tags: ["R", "Bash", "PLINK", "VCFtools"],
+    liveUrl: "https://github.com/mfdiop",
+    githubUrl: "https://github.com/mfdiop",
+    featured: false,
+  },
+  {
+    title: "Open Pf Epidemiology Ecosystem",
+    description: "Contributor to a collaborative open-source analysis ecosystem for Plasmodium genomic epidemiology, providing standardised workflows and reproducible analysis modules used by the malaria genomics community.",
+    tags: ["Python", "Nextflow", "R", "Open Source"],
+    liveUrl: "https://github.com/mfdiop",
+    githubUrl: "https://github.com/mfdiop",
+    featured: false,
+  },
 ];
 
 export function Projects() {
@@ -98,9 +140,11 @@ export function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Projects<ArrowUpRight className="w-4 h-4 ml-2" />
-          </Button>
+          <a href="https://github.com/mfdiop" target="_blank" rel="noopener noreferrer">
+            <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
+              View All on GitHub<ArrowUpRight className="w-4 h-4 ml-2" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

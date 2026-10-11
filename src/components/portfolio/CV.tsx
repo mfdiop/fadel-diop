@@ -86,7 +86,7 @@ export function CV() {
 
         <div className="text-center mt-12">
           <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90" asChild>
-            <a href="/fadel_resume_bioinformatics.pdf" download="Fadel_DIOP_CV.pdf">
+            <a href="/Mouhamadou_Fadel_Diop_CV.pdf" download="Mouhamadou_Fadel_Diop_CV.pdf">
               <Download className="w-4 h-4 mr-2" />Download Full CV
             </a>
           </Button>

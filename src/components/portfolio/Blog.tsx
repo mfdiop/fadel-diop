@@ -1,11 +1,10 @@
 import { Calendar, Clock, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const blogPosts = [
-  { title: "Building Scalable React Applications with TypeScript", excerpt: "Learn best practices for structuring large React applications with TypeScript, including state management, testing strategies, and code organization.", date: "Jan 15, 2024", readTime: "8 min read", category: "React", slug: "building-scalable-react-apps" },
-  { title: "The Complete Guide to API Design", excerpt: "A comprehensive guide to designing RESTful APIs that are easy to use, maintain, and scale. Covers authentication, versioning, and error handling.", date: "Jan 8, 2024", readTime: "12 min read", category: "Backend", slug: "complete-guide-api-design" },
-  { title: "Modern CSS Techniques Every Developer Should Know", excerpt: "Explore modern CSS features like Container Queries, CSS Grid, and CSS Custom Properties that will transform your styling workflow.", date: "Dec 28, 2023", readTime: "6 min read", category: "CSS", slug: "modern-css-techniques" },
-  { title: "Getting Started with Docker and Kubernetes", excerpt: "A beginner-friendly introduction to containerization and orchestration with Docker and Kubernetes for modern application deployment.", date: "Dec 15, 2023", readTime: "10 min read", category: "DevOps", slug: "docker-kubernetes-guide" },
+  { title: "From Raw Reads to Population Insights: A Practical WGS Workflow for Malaria Parasites", excerpt: "A walkthrough of the key steps in processing whole-genome sequencing data from Plasmodium falciparum field samples — from quality control and alignment to variant calling and population-level statistics.", date: "Coming soon", readTime: "~12 min read", category: "Genomics", slug: "pf-wgs-workflow" },
+  { title: "Detecting Antimalarial Drug Resistance with Machine Learning", excerpt: "How ML classifiers trained on genomic markers can help predict drug resistance phenotypes, and what lessons I learned building such a model for P. falciparum resistance surveillance in West Africa.", date: "Coming soon", readTime: "~10 min read", category: "Machine Learning", slug: "ml-amr-resistance" },
+  { title: "Building Reproducible Bioinformatics Pipelines with Nextflow", excerpt: "Best practices for writing scalable, portable, and reproducible genomic analysis workflows using Nextflow — from local testing to HPC cluster deployment.", date: "Coming soon", readTime: "~8 min read", category: "Workflows", slug: "nextflow-best-practices" },
+  { title: "Interactive Data Visualisation for Malaria Genomic Surveillance", excerpt: "How to build R Shiny dashboards that allow epidemiologists and public health teams to explore complex population genetic data without needing to write code.", date: "Coming soon", readTime: "~7 min read", category: "Visualisation", slug: "shiny-genomic-dashboards" },
 ];
 
 export function Blog() {
@@ -43,9 +42,7 @@ export function Blog() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-primary/50 text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Posts<ArrowUpRight className="w-4 h-4 ml-2" />
-          </Button>
+          <p className="text-sm text-muted-foreground">Posts coming soon. In the meantime, check my research on Google Scholar.</p>
         </div>
       </div>
     </section>
