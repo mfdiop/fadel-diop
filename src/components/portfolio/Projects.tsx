@@ -1,4 +1,4 @@
-import { ExternalLink, Github, ArrowUpRight } from "lucide-react";
+import { Github, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -77,9 +77,6 @@ export function Projects() {
                     <span className="text-muted-foreground font-mono text-sm">{project.title} Preview</span>
                   </div>
                   <div className="absolute inset-0 bg-background/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-primary text-primary-foreground hover:scale-110 transition-transform">
-                      <ExternalLink className="w-5 h-5" />
-                    </a>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-foreground text-background hover:scale-110 transition-transform">
                       <Github className="w-5 h-5" />
                     </a>
@@ -96,11 +93,8 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-primary transition-colors">
-                    <ExternalLink className="w-4 h-4" />Live Demo
-                  </a>
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm hover:text-primary transition-colors">
-                    <Github className="w-4 h-4" />Source Code
+                    <Github className="w-4 h-4" />View on GitHub
                   </a>
                 </div>
               </div>
@@ -120,9 +114,6 @@ export function Projects() {
                   </div>
                   <div className="flex gap-2">
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
-                      <Github className="w-5 h-5" />
-                    </a>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors">
                       <ArrowUpRight className="w-5 h-5" />
                     </a>
                   </div>

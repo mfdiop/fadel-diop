@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="hsl(222,47%,5%)"/>
+  <!-- DNA double helix strands -->
+  <!-- Left strand -->
+  <path d="M22 10 C22 18 42 22 42 32 C42 42 22 46 22 54" stroke="hsl(168,100%,50%)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Right strand -->
+  <path d="M42 10 C42 18 22 22 22 32 C22 42 42 46 42 54" stroke="hsl(263,85%,65%)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Rungs -->
+  <line x1="22" y1="17" x2="42" y2="17" stroke="hsl(168,100%,50%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="26" y1="24" x2="38" y2="24" stroke="hsl(263,85%,65%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="22" y1="32" x2="42" y2="32" stroke="hsl(168,100%,50%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="26" y1="40" x2="38" y2="40" stroke="hsl(263,85%,65%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  <line x1="22" y1="47" x2="42" y2="47" stroke="hsl(168,100%,50%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X, Download, Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTheme } from "@/hooks/useTheme";
 
 const navLinks = [
   { href: "#home", label: "Home" },
@@ -15,6 +16,7 @@ export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const { theme, toggle } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -75,12 +77,28 @@ export function Navigation() {
           >
             <Download className="w-4 h-4 mr-2" />Resume
           </Button>
+          <button
+            onClick={toggle}
+            aria-label="Toggle theme"
+            className="p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-200"
+          >
+            {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+          </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <button className="md:hidden text-foreground p-2" onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        <div className="md:hidden flex items-center gap-2">
+          <button
+            onClick={toggle}
+            aria-label="Toggle theme"
+            className="p-2 rounded-lg border border-border hover:border-primary hover:text-primary transition-all duration-200"
+          >
+            {theme === "dark" ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+          </button>
+          <button className="text-foreground p-2" onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
